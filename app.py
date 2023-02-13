@@ -110,12 +110,15 @@ class Room:
             elif choice == 3:
                 self.hero.remove_item()
             elif choice == 4:
+                print("You decide to leave the dungeon and return to the safety of the village.")
+                print("You get nothing, but you are alive. Your family is happy to see you again!")
+                self.end()
                 break
             elif choice == 5:
                 self.continue_exploring()
             else:
                 print("Invalid choice. Try again.")
-            break
+            
 
     def continue_exploring(self):
         """method with various endings"""
